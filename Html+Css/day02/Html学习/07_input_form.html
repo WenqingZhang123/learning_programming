@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwq</title>
+</head>
+<body>
+    <h4>以下是一个注册学生会（input）表单：</h4>
+    <form action="http://www.qq.com" method="POST" name="StudentUnionRegister">
+        <label for="name">姓名</label>
+        <input type="text" name="StudentName" id="name" value="请在这里输入你的姓名(less than 20 chars)" maxlength="20"><br />
+        性别：
+        <label for="nan" >男</label>
+        <input type="radio" name="GenderButton" value="male" id="nan">
+        <label for="nu" >女</label>
+        <input type="radio" name="GenderButton" value="female" id="nu">
+        <label for="mimi" >保密</label>
+        <input type="radio" name="GenderButton" value="intersex" id="mimi"><br />
+
+        <label for="email">注册邮箱：</label>
+        <input type="text" name="EmailNum" id="email" value="email number" maxlength="20"><br />
+
+        <label for="code">设置密码</label>
+        <input type="password" name="PasswordNum" id="code" value="code number" maxlength="20"><br />
+
+        <input type="button" name="TextValidButton" value="发送验证码" ><br />
+
+        意向部门：
+        <label for="xs" >学术部</label>
+        <input type="checkbox" name="DeparButton" value="学术部门" id="xs">
+        <label for="wl" >外联部</label>
+        <input type="checkbox" name="DeparButton" value="外联部门" id="wl">
+        <label for="hq" >后勤部</label>
+        <input type="checkbox" name="DeparButton" value="后勤部门" id="hq"><br />
+
+        <label for="tx" >上传头像：</label>
+        <input type="file" name="UpdateImageButton" value="点击此处上传头像" id="tx"><br />
+
+        <input type="submit" name="SubmitButton" value="提交申请信息" >
+        <input type="reset" name="ResetButton" value="清空表格" >
+
+    </form>
+</body>
+</html>
