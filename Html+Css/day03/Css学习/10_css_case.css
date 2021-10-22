@@ -1,0 +1,18 @@
+body {
+    font: 16px/28px "Microsoft Yahei";
+}
+.centers {
+    text-align: center;
+}
+.del_underline {
+    text-decoration: none;
+}
+p {
+    text-indent: 2em;
+}
+.grey {
+    color:#888;
+}
+.small {
+    font-size: 12px;
+}
