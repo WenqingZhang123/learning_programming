@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwq</title>
+    <style>
+        ul li a {
+            color: pink;
+        }
+
+        /* 这里存在一个问题，波及范围太广了  */
+        ul>p {
+            text-decoration: underline;
+        }
+
+        .green>p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <p>这个位置是儿子元素</p>
+        <li>
+            <a href="#">这个位置是孙子元素</a>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="green">
+        <p>你好，这里是另外一个儿子</p>
+        <li>你好，这里是另外一个孙子</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
