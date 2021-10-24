@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwq</title>
+    <style>
+        div {
+            width: 350px;
+            height: 300px;
+            background-color: pink;
+            /* 注意块级元素中用text-align只是将里面的内容进行水平居中 */
+            text-align: center;
+            margin: auto;
+
+        }
+
+        p {
+            background-color: blue;
+            text-align: center;
+            display: inline-block;
+            height: 300px;
+            width: 350px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ok_block">我是块级元素测试文字</div>
+    <p id="ok_inline">我是行内级元素测试文字</p>
+    <div>
+        <p>我又来了</p>
+    </div>
+</body>
+
+</html>
