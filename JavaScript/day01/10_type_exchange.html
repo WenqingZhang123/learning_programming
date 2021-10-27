@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwq</title>
+    <script>
+
+        //变字符串
+        var num = 15;
+        console.log(num);
+        console.log(typeof (num));
+        //1.  .toString()
+        var numToString1 = num.toString();
+        console.log(numToString1);
+
+        //2.  String()
+        var numToString2 = String(num);
+        console.log(numToString2);
+
+        //3.加号拼接
+        var numToString3 = num + '';
+        console.log(numToString3);
+        console.log(typeof (numToString3));
+
+        //变数字型
+        var str = '12345.6789';
+        console.log(str);
+        console.log(typeof (str));
+
+        //1.parseInt()
+        var strToNum1 = parseInt(str);
+        console.log(strToNum1);
+
+        //2.parseFloat()
+        var strToNum2 = parseFloat(str);
+        console.log(strToNum2);
+
+        //3.Number()
+        var strToNum3 = Number(str);
+        console.log(strToNum3);
+
+        //4. use - * /
+        var strToNum4 = str / 1;
+        console.log(strToNum4);
+
+        //case1:输入年份，输出岁数
+        var input1 = prompt('请输入你的出生年份');
+        alert('你今年：' + (2021 - input1 / 1) + '岁');
+
+        //case2:加法器
+        var input2 = prompt('请输入你要加的第一个数');
+        var input3 = prompt('请输入你要加的第二个数');
+        alert('两个数的和是：' + (input2 / 1 + input3 / 1))
+
+        //Boolean
+        var otherToBoolean1 = '';
+        console.log(Boolean(otherToBoolean1));
+        var otherToBoolean2 = 0;
+        console.log(Boolean(otherToBoolean2));
+        var otherToBoolean3 = NaN;
+        console.log(Boolean(otherToBoolean3));
+        var otherToBoolean4 = null;
+        console.log(Boolean(otherToBoolean4));
+        var otherToBoolean5 = undefined;
+        console.log(Boolean(otherToBoolean5));
+
+        var otherToBoolean6 = '12sdf';
+        console.log(Boolean(otherToBoolean6));
+
+        //homework1:给同桌讲两个变量的值
+        var info1 = prompt('给我一个值a');
+        var info2 = prompt('给我一个值b');
+        var info3 = info1;
+        alert('先把a给c，现在：\n a等于' + info1 + '\nc等于' + info3);
+        info1 = info2;
+        alert('再把b给a，现在：\n a等于' + info1 + '\nb等于' + info2);
+        info2 = info3;
+        alert('最后把c给b，现在：\n b等于' + info2 + '\nc等于' + info3)
+        //homework2:获取用户姓名，年龄，性别，并打印用户信息
+        var info4 = prompt('输入姓名');
+        var info5 = prompt('输入年龄');
+        var info6 = prompt('输入性别');
+        alert('姓名：' + info4 + ' \n年龄：' + info5 + '\n性别:' + info6)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
